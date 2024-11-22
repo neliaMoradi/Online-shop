@@ -1,0 +1,379 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    direction: rtl;
+    scroll-behavior: smooth;
+  }
+
+  @font-face {
+    font-family: sanss;
+    src: url(../fonts/IRANSansWeb-Light_1.eot);
+    src: url(../fonts/IRANSansWeb-Light_1.ttf);
+    src: url(../fonts/IRANSansWeb-Light_1.woff);
+    src: url(../fonts/IRANSansWeb-Light_1.woff2);
+  }
+
+  @keyframes animate-1 {
+    from {
+    }
+    to {
+      overflow: visible;
+    }
+  }
+
+  @keyframes animate-2 {
+    from {
+    }
+    to {
+      opacity: 1;
+      transform: translatey(0px);
+    }
+  }
+  @keyframes animate-3 {
+    from {
+    }
+    to {
+      opacity: 1;
+      transform: translatex(0px);
+    }
+  }
+
+  @keyframes animate-4 {
+    from {
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(0px);
+    }
+  }
+}
+
+@layer components {
+  header {
+    @apply desktop:w-full
+    desktop:h-[110px]
+    desktop:bg-[white]
+    desktop:sticky
+    desktop:top-0
+    desktop:z-[10000000];
+  }
+  header {
+    box-shadow: 0 1px 5px #d0d0d0;
+  }
+
+  header > .center {
+    @apply desktop:w-full
+      desktop:h-[70px]
+      desktop:flex
+      desktop:flex-row
+      desktop:flex-wrap;
+  }
+  header > .center > .logo {
+    @apply desktop:w-[10%]
+      desktop:h-[50px]
+      desktop:flex
+      desktop:justify-start
+      desktop:items-center
+      desktop:pr-[16px]
+      desktop:mt-[10px]
+      desktop:bg-bgColor;
+  }
+
+  header > .center > .search {
+    @apply desktop:w-[64%]
+      desktop:h-[100%]
+      desktop:flex
+      desktop:items-center
+      desktop:pr-[16px];
+  }
+  header > .center > .search > input[type="text"] {
+    @apply desktop:w-[600px]
+      desktop:h-[44px]
+      desktop:bg-bgColor
+      desktop:bg-opacity-[0.5]
+      desktop:border-none
+      desktop:rounded-[7px]
+      desktop:pr-[40px]
+      desktop:outline-none;
+  }
+  header > .center > .search > input[type="text"]::placeholder {
+    @apply desktop:font-[sanss]
+      desktop:text-[13px]
+      desktop:text-[whitesmoke];
+  }
+  header > .center > .login {
+    @apply desktop:w-[26%]
+      desktop:h-[100%]
+      desktop:flex
+      desktop:flex-row
+      desktop:flex-wrap
+      desktop:justify-end
+      desktop:items-center
+      desktop:gap-[15px]
+      desktop:pl-[25px];
+  }
+
+  header > .center > .login > .register {
+    @apply desktop:w-[135px]
+      desktop:h-[40px]
+      desktop:no-underline
+      desktop:text-[black]
+      desktop:font-[sanss]
+      desktop:text-[14px]
+      desktop:font-bold
+      desktop:border-[1px]
+      desktop:border-[solid]
+      desktop:border-[#e0e0e2]
+      desktop:rounded-[7px]
+      desktop:flex
+      desktop:flex-row
+      desktop:flex-wrap
+      desktop:justify-center
+      desktop:items-center
+      desktop:gap-[8px]
+      desktop:transition-all
+      desktop:duration-300;
+  }
+  header > .center > .login > .register:hover {
+    @apply desktop:bg-bgColor
+    desktop:text-[whitesmoke];
+  }
+
+  header > .bottom {
+    @apply desktop:w-full
+      desktop:h-[40px]
+      desktop:flex
+      desktop:flex-row
+      desktop:flex-wrap
+      desktop:relative;
+  }
+  .bottom > .menu {
+    @apply desktop:w-[86%]
+      desktop:h-[100%];
+  }
+  .bottom > .menu > nav {
+    @apply desktop:w-[100%]
+      desktop:h-[100%]
+      desktop:flex
+      desktop:flex-row
+      desktop:flex-wrap
+      desktop:pr-[20px]
+      desktop:gap-[16px]
+      desktop:items-center
+      desktop:justify-start;
+  }
+  .bottom > .menu > nav > div {
+    @apply desktop:h-[100%]
+      desktop:w-fit
+      desktop:relative
+      desktop:transition-all
+      desktop:duration-200;
+  }
+
+  .bottom > .menu > nav > div > .animate {
+    @apply desktop:w-[0px]
+             desktop:absolute
+              desktop:left-0
+              desktop:bottom-0
+              desktop:h-[2px]
+              desktop:bg-bgColor
+              desktop:transition-all
+              desktop:duration-300
+              desktop:z-[2];
+  }
+  .bottom > .menu > nav > div:hover > .animate {
+    @apply desktop:w-[100%];
+  }
+
+  .bottom > .menu > nav > div > a {
+    @apply desktop:flex
+    desktop:flex-row
+    desktop:flex-wrap
+      desktop:w-full
+      desktop:h-[100%]
+      desktop:no-underline
+      desktop:text-[#2b2b2b]
+      desktop:opacity-[0.6]
+      desktop:font-[sanss]
+      desktop:text-[14px]
+      desktop:items-center
+      desktop:gap-[3px];
+  }
+  .bottom > .menu > nav > div > a > span {
+    @apply desktop:flex
+      desktop:items-center;
+  }
+
+  .menu__item__1 > .kala {
+    @apply desktop:font-extrabold;
+  }
+  .menu__item__1 > .kala {
+    color: black !important;
+    opacity: 1 !important ;
+    font-size: 14px !important ;
+  }
+
+  .line__1 {
+    @apply desktop:inline-block
+          desktop:w-[1px]
+          desktop:h-[16px]
+          desktop:bg-[lightgray];
+  }
+
+  .buyer__h2 {
+    @apply desktop:w-[60%]
+    desktop:h-fit
+    desktop:mx-auto
+    desktop:mt-[100px]
+    desktop:mb-[10px]
+    desktop:font-[sanss]
+    desktop:text-[20px]
+    desktop:font-extrabold
+    desktop:text-bgColor;
+  }
+
+  .buyer__form {
+    @apply desktop:w-[60%]
+    desktop:h-fit
+    desktop:mx-auto
+    desktop:mb-[100px]
+    desktop:flex
+    desktop:flex-row
+    desktop:flex-wrap
+    desktop:border-[2px]
+    desktop:border-[solid]
+    desktop:border-bgColor
+    desktop:rounded-[16px];
+  }
+  .buyer__form {
+    box-shadow: 5px 5px 9px #25012b;
+  }
+  .form__main {
+    @apply desktop:w-[60%]
+    desktop:h-fit
+    desktop:flex
+    desktop:flex-col
+    desktop:flex-wrap
+    desktop:py-[10px]
+    desktop:px-[30px]
+    desktop:relative;
+  }
+  .buyer__form__img {
+    @apply desktop:w-[40%]
+    desktop:h-auto
+    desktop:bg-bgColor
+    desktop:bg-opacity-[0.6]
+    desktop:rounded-l-[16px];
+  }
+  .form__main > label {
+    @apply desktop:font-[sanss]
+    desktop:font-bold
+    desktop:text-[16px]
+    desktop:mb-[10px]
+    desktop:mt-[20px];
+  }
+  .form__main > h2 {
+    @apply desktop:font-[sanss]
+    desktop:font-bold
+    desktop:text-[16px]
+    desktop:mb-[30px]
+    desktop:mt-[20px];
+  }
+
+  .form__main > input {
+    @apply desktop:w-[200px]
+    desktop:h-[30px]
+    desktop:mx-[30px]
+    desktop:outline-none
+    desktop:px-[10px]
+    desktop:bg-bgColor
+    desktop:bg-opacity-[0.6]
+    desktop:font-[sanss]
+    desktop:font-bold
+    desktop:text-[whitesmoke]
+    desktop:text-[14px]
+    desktop:rounded-[8px];
+  }
+  .form__main > label[for="man"],
+  .form__main > label[for="woman"] {
+    @apply desktop:m-[0px]
+    desktop:font-[sanss]
+    desktop:inline-block
+    desktop:w-fit;
+  }
+
+  .form__main > .radio__1 {
+    @apply desktop:w-[25px]
+    desktop:h-[15px]
+    desktop:inline-block
+    desktop:mt-[6px]
+    desktop:absolute
+    desktop:bottom-[345px];
+  }
+  .form__main > .radio__2 {
+    @apply desktop:w-[25px]
+    desktop:h-[15px]
+    desktop:inline-block
+    desktop:mt-[6px]
+    desktop:absolute
+    desktop:bottom-[325px];
+  }
+  .form__main > input[type="submit"] {
+    @apply desktop:w-[50px]
+    desktop:mt-[30px]
+    desktop:mx-[180px]
+    desktop:bg-[white]
+    desktop:text-[black]
+    desktop:cursor-pointer
+    desktop:border-[1px]
+    desktop:border-[solid]
+    desktop:border-bgColor
+    desktop:transition-all
+    desktop:duration-300;
+  }
+  .form__main > input[type="submit"]:hover {
+    @apply desktop:bg-bgColor
+    desktop:text-[whitesmoke]
+    desktop:bg-opacity-[0.8];
+  }
+  .fixed {
+    position: fixed;
+  }
+
+  .fixed {
+    @apply desktop:w-[40px]
+      desktop:h-[40px]
+      desktop:rounded-[2px]
+      desktop:z-[1000]
+      desktop:bottom-[20px]
+      desktop:left-[20px];
+  }
+
+  .fixed > a {
+    @apply desktop:w-[100%]
+        desktop:h-[100%]
+        desktop:bg-[#000000]
+        desktop:opacity-[0.4]
+        desktop:rounded-[2px]
+        desktop:flex
+        desktop:items-center
+        desktop:justify-center
+        desktop:transition-all
+        desktop:duration-300;
+  }
+
+  .fixed > a:hover {
+    @apply desktop:bg-[black]
+          desktop:opacity-[1];
+  }
+}
