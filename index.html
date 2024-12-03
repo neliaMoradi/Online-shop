@@ -3,283 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online-Shop</title>
+    <title>Login-Page</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!--start of website-->
-    <div class="wrapper__1">
-      <h6 id="top"></h6>
-      <!--start header-->
-      <header>
-        <div class="center">
-          <div class="logo"></div>
-          <div class="search">
-            <input type="text" placeholder="جستجو" name="search" />
-          </div>
-          <div class="login">
-            <a href="#" class="register">
-              <span
-                ><svg
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style="
-                    width: 24px;
-                    height: 24px;
-                    fill: var(--color-icon-high-emphasis);
-                  "
-                  width="24"
-                  height="24"
-                >
-                  <g fill="#424750">
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 15h-2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V7a2 2 0 012-2h6a2 2 0 012 2v2h2V7a4 4 0 00-4-4H6a4 4 0 00-4 4v10a4 4 0 004 4h6a4 4 0 004-4v-2zm6-4H9.414l2.293-2.293-1.414-1.414-4 4a1 1 0 000 1.414l4 4 1.414-1.414L9.414 13H22v-2z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </g></svg></span
-              ><span>پنل کاربر</span></a
-            >
-          </div>
-        </div>
-        <div class="bottom">
-          <div class="menu">
-            <nav class="menu__nav">
-              <div class="menu__item__1">
-                <a href="#" class="kala">
-                  <span>
-                    <svg
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="
-                        width: 18px;
-                        height: 18px;
-                        fill: var(--color-icon-high-emphasis);
-                      "
-                      width="24"
-                      height="24"
-                    >
-                      <g fill="#424750">
-                        <path
-                          fill-rule="evenodd"
-                          d="M19 8V6H5v2h14zm0 3v2H5v-2h14zm0 5v2H5v-2h14z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </g>
-                    </svg> </span
-                  >دسته بندی کالاها</a
-                >
-                <div class="animate"></div>
-              </div>
-              <span class="line__1"></span>
-              <div>
-                <a href="./wonderful.html">
-                  <span>
-                    <svg
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="
-                        width: 18px;
-                        height: 18px;
-                        fill: var(--color-icon-low-emphasis);
-                      "
-                      width="10"
-                      height="10"
-                    >
-                      <defs>
-                        <symbol
-                          id="amazing"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M15.112 2.234c.687.231 1.153.525 1.895 1.171l.536.474.109.09.142.104.653.42c.837.54 1.244.9 1.663 1.495.381.542.579 1 .794 1.841l.226.941.053.185.049.142.285.719c.36.914.483 1.457.483 2.184 0 .728-.124 1.27-.483 2.184l-.246.615-.08.22-.06.211-.227.941c-.215.842-.413 1.3-.795 1.843-.416.59-.822.95-1.646 1.483l-.67.431-.14.104-.176.147-.471.417c-.742.646-1.208.94-1.898 1.172-.688.23-1.206.272-2.224.199l-.687-.052-.197-.006-.086.001-.212.01-.586.047c-1.018.073-1.537.03-2.23-.201-.686-.231-1.152-.524-1.893-1.17l-.594-.522-.144-.111-.103-.072-.619-.395c-.821-.532-1.229-.894-1.643-1.483-.417-.593-.614-1.085-.855-2.085l-.146-.621-.061-.225-.06-.179-.285-.719C2.123 13.27 2 12.729 2 12c0-.727.124-1.27.483-2.184l.285-.717.082-.258.039-.147.146-.621.118-.46c.195-.707.39-1.131.737-1.624.414-.59.82-.95 1.643-1.483l.552-.352.153-.104.16-.123.124-.105.47-.417c.743-.646 1.209-.94 1.897-1.171.69-.232 1.209-.274 2.227-.2l.7.052.228.005.275-.013.564-.044c1.02-.074 1.539-.031 2.229.2zm-1.931 1.784l-.89.065c-.105.006-.2.008-.291.008l-.275-.007-.156-.009-.563-.044-.385-.024c-.514-.024-.767.012-1.094.122l-.108.039c-.35.132-.62.313-1.138.767l-.55.486-.155.125-.142.107-.23.158-.72.462c-.517.343-.733.545-.958.866-.23.326-.347.596-.51 1.247l-.193.815-.05.19-.05.17-.094.271-.345.87C4.061 11.287 4 11.594 4 12l.002.12c.012.35.082.65.282 1.18l.37.934.07.21.074.257.219.914c.162.65.28.92.51 1.247.247.352.485.564 1.121.973l.559.356c.118.077.204.138.296.207l.073.056.241.2.464.411c.569.5.839.67 1.241.805.404.135.694.159 1.484.1l.306-.025.555-.034.133-.002c.09 0 .186.003.291.008l.166.01.536.043c.79.059 1.08.035 1.478-.098.407-.138.678-.308 1.247-.807l.387-.344.212-.182.181-.142.186-.133.108-.073.721-.462c.518-.342.735-.546.96-.866.25-.357.367-.644.554-1.431l.091-.391c.032-.138.059-.245.084-.34l.075-.26.094-.273.345-.869c.223-.587.284-.894.284-1.299 0-.405-.061-.712-.284-1.299l-.37-.934-.095-.293-.075-.274-.149-.631-.098-.39c-.109-.402-.203-.64-.34-.865l-.115-.175c-.226-.32-.441-.523-.96-.866l-.624-.4a7.664 7.664 0 01-.255-.17l-.212-.157-.155-.126-.697-.613c-.42-.357-.669-.516-.977-.634l-.218-.074c-.322-.098-.603-.12-1.195-.081zM16 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zm-1.8-8.1l1.6 1.2-6 8-1.6-1.2 6-8zM11 8.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z"
-                            clip-rule="evenodd"
-                          ></path>
-                        </symbol>
-                      </defs>
-                      <use xlink:href="#amazing" fill="#A1A3A8"></use>
-                    </svg> </span
-                  >شگفت انگیز ها</a
-                >
-                <div class="animate"></div>
-              </div>
-              <div>
-                <a href="#">
-                  <span>
-                    <svg
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="
-                        width: 18px;
-                        height: 18px;
-                        fill: var(--color-icon-low-emphasis);
-                      "
-                      width="10"
-                      height="10"
-                    >
-                      <defs>
-                        <symbol
-                          id="fresh"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M18 4a2 2 0 00-2-2h-3a2 2 0 00-2 2v1.535a4.007 4.007 0 00-1.874 2.467A5.108 5.108 0 009 8l-.217.005A5 5 0 004 13H3a1 1 0 00-.99 1.141l1 7A1 1 0 004 22h16a1 1 0 00.99-.859l1-7A1 1 0 0021 13h-1V9l-.007-.232a4 4 0 00-1.992-3.232L18 4zM4.867 20l-.714-5h15.694l-.714 5H4.867zM16 7h-3a2 2 0 00-1.924 1.45 5.003 5.003 0 012.919 4.318L14 13h4V9a2 2 0 00-1.85-1.995L16 7zm-9.995 5.824A3 3 0 0112 13H6l.005-.176zM16 4h-3v1h3V4zm-1 14v-2H9v2h6z"
-                            clip-rule="evenodd"
-                          ></path>
-                        </symbol>
-                      </defs>
-                      <use xlink:href="#fresh" fill="#A1A3A8"></use>
-                    </svg> </span
-                  >سوپرمارکت</a
-                >
-                <div class="animate"></div>
-              </div>
-              <div>
-                <a href="#">
-                  <span>
-                    <svg
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="
-                        width: 18px;
-                        height: 18px;
-                        fill: var(--color-icon-low-emphasis);
-                      "
-                      width="10"
-                      height="10"
-                    >
-                      <defs>
-                        <symbol
-                          id="giftCard"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 18 18"
-                        >
-                          <path d="M11.25 10.5H15V12h-3.75v-1.5z"></path>
-                          <path
-                            fill-rule="evenodd"
-                            d="M3 3h12a2.25 2.25 0 012.25 2.25v7.5A2.25 2.25 0 0115 15H3a2.25 2.25 0 01-2.25-2.25v-7.5A2.25 2.25 0 013 3zm0 1.5a.75.75 0 00-.75.75v7.5c0 .414.336.75.75.75h3v-2.69l-.97.97-1.06-1.06.988-.989A2.25 2.25 0 116 5.378V4.5H3zm3 3.75V7.5a.75.75 0 10-.75.75H6zm1.5-2.872V4.5H15a.75.75 0 01.75.75v7.5a.75.75 0 01-.75.75H7.5v-2.69l.97.97 1.06-1.06-.988-.989A2.25 2.25 0 107.5 5.378zm0 2.872h.75a.75.75 0 10-.75-.75v.75z"
-                            clip-rule="evenodd"
-                          ></path>
-                        </symbol>
-                      </defs>
-                      <use xlink:href="#giftCard" fill="#A1A3A8"></use>
-                    </svg> </span
-                  >کارت هدیه</a
-                >
-                <div class="animate"></div>
-              </div>
-              <div>
-                <a href="#">
-                  <span>
-                    <svg
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="
-                        width: 18px;
-                        height: 18px;
-                        fill: var(--color-icon-low-emphasis);
-                      "
-                      width="10"
-                      height="10"
-                    >
-                      <defs>
-                        <symbol
-                          id="searchTrend"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M12.015 9.105c.222.397.41.73.466.842.361.724.519 1.31.519 2.053a2 2 0 01-4 0l.003-4.557c0-.953-1.206-1.367-1.79-.613C5.087 9.572 4 11.906 4 13.889 4 18.365 7.578 22 12 22c4.422 0 8-3.635 8-8.111 0-2.968-2.45-6.78-7.295-11.598a1 1 0 00-1.6.262c-.807 1.615-.807 3.28 0 4.894.178.356.582 1.076.91 1.658zM7 12a4 4 0 108 0c0-1.078-.238-1.962-.73-2.947-.079-.156-.31-.569-.566-1.024a50.532 50.532 0 01-.81-1.476c-.273-.546-.404-1.079-.393-1.612C16.18 8.811 18 11.834 18 13.889 18 17.267 15.31 20 12 20s-6-2.733-6-6.111c0-.87.33-1.925 1-3.154V12z"
-                            clip-rule="evenodd"
-                          ></path>
-                        </symbol>
-                      </defs>
-                      <use xlink:href="#searchTrend" fill="#A1A3A8"></use>
-                    </svg> </span
-                  >پرفروش ترین ها</a
-                >
-                <div class="animate"></div>
-              </div>
-              <div>
-                <a href="#">
-                  <span>
-                    <svg
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="
-                        width: 18px;
-                        height: 18px;
-                        fill: var(--color-icon-low-emphasis);
-                      "
-                      width="18"
-                      height="18"
-                    >
-                      <defs>
-                        <symbol
-                          id="discount"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M22 4a1 1 0 011 1v14a1 1 0 01-1 1H6a1 1 0 01-.707-.293l-4-4A1 1 0 011 15V9a1 1 0 01.293-.707l4-4A1 1 0 016 4h16zm-1 2H6.414L3 9.414v5.172L6.414 18H21V6zm-6 3.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm2.5 6.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM10 12a3 3 0 11-6 0 3 3 0 016 0zm-4 0a1 1 0 102 0 1 1 0 00-2 0zm12.848-3.47l-5 8-1.696-1.06 5-8 1.696 1.06z"
-                            clip-rule="evenodd"
-                          ></path>
-                        </symbol>
-                      </defs>
-                      <use xlink:href="#discount" fill="#A1A3A8"></use>
-                    </svg> </span
-                  >تخفیف‌ها و پیشنهادها</a
-                >
-                <div class="animate"></div>
-              </div>
-              <span class="line__1"></span>
-              <div>
-                <a href="#">سوالی دارید؟</a>
-                <div class="animate"></div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <!--end header-->
+    <div class="wrapper__4">
+      <h2 class="login__h2">اطلاعات کاربری خود را وارد کنید:</h2>
+      <div class="login__form">
+        <form action="./seller-Panel.html" method="get" class="form__main">
+          <label for="useraddress">نام کاربری:</label>
+          <input type="text" name="UserName" id="useraddress" required />
 
-      <!--start fixed-->
-      <div class="fixed">
-        <a href="#top">
-          <svg
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns="http://www.w3.org/2000/svg"
-            style="
-              width: 24px;
-              height: 24px;
-              fill: var(--color-icon-low-emphasis);
-            "
-            width="11.25"
-            height="18.4"
-          >
-            <defs>
-              <symbol
-                id="expandLess"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7.707 14.707l-1.414-1.414 5-5a1 1 0 011.414 0l5 5-1.414 1.414L12 10.414l-4.293 4.293z"
-                ></path>
-              </symbol>
-            </defs>
-            <use xlink:href="#expandLess" fill="whitesmoke"></use>
-          </svg>
-        </a>
+          <label for="pass">رمز:</label>
+          <input type="password" name="Password" id="pass" required />
+
+          <input type="submit" value="وارد شوید" />
+        </form>
+        <div class="login__form__img"></div>
       </div>
-      <!--end fixed-->
+      <!--start darkMode-->
+
+      <button class="btn">
+        <svg
+          class="svg__sun"
+          width="30px"
+          height="30px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 1C11 0.447715 11.4477 0 12 0C12.5523 0 13 0.447715 13 1V3C13 3.55228 12.5523 4 12 4C11.4477 4 11 3.55228 11 3V1Z"
+            fill="#ffffff"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12ZM8.06167 12C8.06167 14.1751 9.82492 15.9383 12 15.9383C14.1751 15.9383 15.9383 14.1751 15.9383 12C15.9383 9.82492 14.1751 8.06167 12 8.06167C9.82492 8.06167 8.06167 9.82492 8.06167 12Z"
+            fill="#ffffff"
+          />
+          <path
+            d="M20.4853 3.51472C20.0947 3.12419 19.4616 3.12419 19.0711 3.51472L17.6568 4.92893C17.2663 5.31946 17.2663 5.95262 17.6568 6.34315C18.0474 6.73367 18.6805 6.73367 19.0711 6.34315L20.4853 4.92893C20.8758 4.53841 20.8758 3.90524 20.4853 3.51472Z"
+            fill="#ffffff"
+          />
+          <path
+            d="M1 13C0.447715 13 0 12.5523 0 12C0 11.4477 0.447715 11 1 11H3C3.55228 11 4 11.4477 4 12C4 12.5523 3.55228 13 3 13H1Z"
+            fill="#ffffff"
+          />
+          <path
+            d="M3.51472 3.51472C3.1242 3.90524 3.1242 4.53841 3.51472 4.92893L4.92894 6.34315C5.31946 6.73367 5.95263 6.73367 6.34315 6.34315C6.73368 5.95262 6.73368 5.31946 6.34315 4.92893L4.92894 3.51472C4.53841 3.12419 3.90525 3.12419 3.51472 3.51472Z"
+            fill="#ffffff"
+          />
+          <path
+            d="M11 21C11 20.4477 11.4477 20 12 20C12.5523 20 13 20.4477 13 21V23C13 23.5523 12.5523 24 12 24C11.4477 24 11 23.5523 11 23V21Z"
+            fill="#ffffff"
+          />
+          <path
+            d="M6.34315 17.6569C5.95263 17.2663 5.31946 17.2663 4.92894 17.6569L3.51473 19.0711C3.1242 19.4616 3.1242 20.0948 3.51473 20.4853C3.90525 20.8758 4.53842 20.8758 4.92894 20.4853L6.34315 19.0711C6.73368 18.6805 6.73368 18.0474 6.34315 17.6569Z"
+            fill="#ffffff"
+          />
+          <path
+            d="M21 13C20.4477 13 20 12.5523 20 12C20 11.4477 20.4477 11 21 11H23C23.5523 11 24 11.4477 24 12C24 12.5523 23.5523 13 23 13H21Z"
+            fill="#ffffff"
+          />
+          <path
+            d="M17.6568 17.6569C17.2663 18.0474 17.2663 18.6805 17.6568 19.0711L19.0711 20.4853C19.4616 20.8758 20.0947 20.8758 20.4853 20.4853C20.8758 20.0948 20.8758 19.4616 20.4853 19.0711L19.0711 17.6569C18.6805 17.2663 18.0474 17.2663 17.6568 17.6569Z"
+            fill="#ffffff"
+          />
+        </svg>
+
+        <svg
+          class="svg__moon"
+          width="30px"
+          height="30px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="Environment / Moon">
+            <path
+              id="Vector"
+              d="M9 6C9 10.9706 13.0294 15 18 15C18.9093 15 19.787 14.8655 20.6144 14.6147C19.4943 18.3103 16.0613 20.9999 12 20.9999C7.02944 20.9999 3 16.9707 3 12.0001C3 7.93883 5.69007 4.50583 9.38561 3.38574C9.13484 4.21311 9 5.09074 9 6Z"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+      </button>
+      <!--end darkMode-->
     </div>
+
     <!--end of website-->
     <script src="./js/main.js"></script>
   </body>

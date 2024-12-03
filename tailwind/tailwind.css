@@ -22,147 +22,201 @@
     src: url(../fonts/IRANSansWeb-Light_1.woff);
     src: url(../fonts/IRANSansWeb-Light_1.woff2);
   }
-
-  @keyframes animate-1 {
-    from {
-    }
-    to {
-      overflow: visible;
-    }
-  }
-
-  @keyframes animate-2 {
-    from {
-    }
-    to {
-      opacity: 1;
-      transform: translatey(0px);
-    }
-  }
-  @keyframes animate-3 {
-    from {
-    }
-    to {
-      opacity: 1;
-      transform: translatex(0px);
-    }
-  }
-
-  @keyframes animate-4 {
-    from {
-    }
-    to {
-      opacity: 1;
-      transform: translateZ(0px);
-    }
-  }
 }
 
 @layer components {
-  header {
-    @apply desktop:w-full
-    desktop:h-[110px]
-    desktop:bg-[white]
-    desktop:sticky
-    desktop:top-0
-    desktop:z-[10000000];
+  .wrapper__4 {
+    @apply dark:bg-[black]
+    dark:w-[100%]
+    dark:h-[100vh]
+    dark:my-0;
   }
-  header {
-    box-shadow: 0 1px 5px #d0d0d0;
+  .login__h2 {
+    @apply desktop:w-[60%]
+    desktop:h-fit
+    desktop:mx-auto
+    desktop:px-[10px]
+    desktop:pt-[100px]
+    desktop:mb-[20px]
+    desktop:font-[sanss]
+    desktop:text-[20px]
+    desktop:font-extrabold
+    desktop:text-bgColor
+    mobile:w-[60%]
+    mobile:h-fit
+    mobile:mx-auto
+    mobile:px-[10px]
+    mobile:pt-[100px]
+    mobile:mb-[20px]
+    mobile:font-[sanss]
+    mobile:text-[20px]
+    mobile:font-extrabold
+    mobile:text-bgColor
+    dark:text-[white];
   }
 
-  header > .center {
-    @apply desktop:w-full
-      desktop:h-[70px]
+  .login__form {
+    @apply desktop:w-[60%]
+    desktop:h-[400px]
+    desktop:mx-auto
+    desktop:mb-[100px]
+    desktop:flex
+    desktop:flex-row
+    desktop:flex-wrap
+    desktop:items-center
+    desktop:border-[2px]
+    desktop:border-[solid]
+    desktop:border-bgColor
+    desktop:rounded-[16px]
+    mobile:w-[60%]
+    mobile:h-[400px]
+    mobile:mx-auto
+    mobile:mb-[100px]
+    mobile:flex
+    mobile:flex-row
+    mobile:flex-wrap
+    mobile:items-center
+    mobile:border-[2px]
+    mobile:border-[solid]
+    mobile:border-bgColor
+    mobile:rounded-[16px]
+    dark:bg-[white]
+    dark:border-none;
+  }
+  .login__form {
+    box-shadow: 5px 5px 9px #25012b;
+  }
+  .form__main {
+    @apply desktop:w-[60%]
+    desktop:h-fit
+    desktop:flex
+    desktop:flex-col
+    desktop:flex-wrap
+    desktop:py-[10px]
+    desktop:px-[30px]
+   mobile:w-[60%]
+   mobile:h-fit
+   mobile:flex
+   mobile:flex-col
+   mobile:flex-wrap
+   mobile:py-[10px]
+   mobile:px-[30px];
+  }
+
+  .form__main > label {
+    @apply desktop:font-[sanss]
+    desktop:text-[20px]
+    desktop:font-bold
+    desktop:mb-[10px]
+   mobile:font-[sanss]
+   mobile:text-[20px]
+   mobile:font-bold
+   mobile:mb-[10px];
+  }
+
+  .form__main > input[type="text"],
+  .form__main > input[type="password"] {
+    @apply desktop:font-[sanss]
+    desktop:text-[16px]
+    desktop:font-bold
+    desktop:text-bgColor
+    desktop:mb-[30px]
+    desktop:w-[200px]
+    desktop:h-[30px]
+    desktop:bg-[#00000033]
+    desktop:rounded-[10px]
+    desktop:outline-dashed
+    desktop:mx-auto
+    mobile:font-[sanss]
+    mobile:text-[16px]
+    mobile:font-bold
+    mobile:text-bgColor
+    mobile:mb-[30px]
+    mobile:w-[200px]
+    mobile:h-[30px]
+    mobile:bg-[#00000033]
+    mobile:rounded-[10px]
+    mobile:outline-dashed
+    mobile:mx-auto
+    dark:text-[black];
+  }
+
+  .form__main > input[type="submit"] {
+    @apply desktop:font-[sanss]
+    desktop:text-[16px]
+    desktop:font-bold
+    desktop:text-[black]
+    desktop:mt-[30px]
+    desktop:w-[100px]
+    desktop:h-[30px]
+    desktop:rounded-[10px]
+    desktop:outline-double
+    desktop:mx-auto
+    desktop:cursor-pointer
+   mobile:font-[sanss]
+   mobile:text-[16px]
+   mobile:font-bold
+   mobile:text-[black]
+   mobile:mt-[30px]
+   mobile:w-[100px]
+   mobile:h-[30px]
+   mobile:rounded-[10px]
+   mobile:outline-double
+   mobile:mx-auto
+   mobile:cursor-pointer;
+  }
+
+  .form__main > input[type="submit"]:hover {
+    @apply desktop:text-bgColor
+     mobile:text-bgColor
+     dark:text-[whitesmoke]
+     dark:bg-[#2b2b2b];
+  }
+
+  .login__form > .login__form__img {
+    @apply desktop:w-[40%]
+    desktop:h-[400px]
+    desktop:bg-bgColor
+    desktop:bg-opacity-[0.6]
+    desktop:rounded-l-[16px]
+    dark:bg-[#2b2b2b];
+  }
+
+  .wrapper__5 {
+    @apply desktop:bg-[#f5f7fa]
+    mobile:bg-[#f5f7fa]
+    dark:bg-[black];
+  }
+
+  .menu__seller {
+    @apply desktop:w-[100%]
+      desktop:h-[64px]
       desktop:flex
       desktop:flex-row
-      desktop:flex-wrap;
+      desktop:flex-wrap
+      desktop:items-center
+      desktop:bg-[white]
+      desktop:sticky
+      desktop:top-0
+      desktop:px-[16px]
+      desktop:z-[10000000]
+      mobile:sticky
+          mobile:top-0
+          mobile:z-[30000000];
   }
-  header > .center > .logo {
+  .menu__seller > .logo {
     @apply desktop:w-[10%]
       desktop:h-[50px]
       desktop:flex
       desktop:justify-start
       desktop:items-center
       desktop:pr-[16px]
-      desktop:mt-[10px]
-      desktop:bg-bgColor;
-  }
-
-  header > .center > .search {
-    @apply desktop:w-[64%]
-      desktop:h-[100%]
-      desktop:flex
-      desktop:items-center
-      desktop:pr-[16px];
-  }
-  header > .center > .search > input[type="text"] {
-    @apply desktop:w-[600px]
-      desktop:h-[44px]
       desktop:bg-bgColor
-      desktop:bg-opacity-[0.5]
-      desktop:border-none
-      desktop:rounded-[7px]
-      desktop:pr-[40px]
-      desktop:outline-none;
+      mobile:hidden
+      dark:bg-[#2b2b2b88];
   }
-  header > .center > .search > input[type="text"]::placeholder {
-    @apply desktop:font-[sanss]
-      desktop:text-[13px]
-      desktop:text-[whitesmoke];
-  }
-  header > .center > .login {
-    @apply desktop:w-[26%]
-      desktop:h-[100%]
-      desktop:flex
-      desktop:flex-row
-      desktop:flex-wrap
-      desktop:justify-end
-      desktop:items-center
-      desktop:gap-[15px]
-      desktop:pl-[25px];
-  }
-
-  header > .center > .login > .register {
-    @apply desktop:w-[135px]
-      desktop:h-[40px]
-      desktop:no-underline
-      desktop:text-[black]
-      desktop:font-[sanss]
-      desktop:text-[14px]
-      desktop:font-bold
-      desktop:border-[1px]
-      desktop:border-[solid]
-      desktop:border-[#e0e0e2]
-      desktop:rounded-[7px]
-      desktop:flex
-      desktop:flex-row
-      desktop:flex-wrap
-      desktop:justify-center
-      desktop:items-center
-      desktop:gap-[8px]
-      desktop:transition-all
-      desktop:duration-300;
-  }
-  header > .center > .login > .register:hover {
-    @apply desktop:bg-bgColor
-    desktop:text-[whitesmoke];
-  }
-
-  header > .bottom {
-    @apply desktop:w-full
-      desktop:h-[40px]
-      desktop:flex
-      desktop:flex-row
-      desktop:flex-wrap
-      desktop:relative;
-  }
-  .bottom > .menu {
-    @apply desktop:w-[86%]
-      desktop:h-[100%];
-  }
-  .bottom > .menu > nav {
-    @apply desktop:w-[100%]
+  .menu__seller__nav {
+    @apply desktop:w-[80%]
       desktop:h-[100%]
       desktop:flex
       desktop:flex-row
@@ -170,9 +224,26 @@
       desktop:pr-[20px]
       desktop:gap-[16px]
       desktop:items-center
-      desktop:justify-start;
+      desktop:justify-start
+      mobile:hidden;
   }
-  .bottom > .menu > nav > div {
+  .menu__seller > .icon {
+    @apply desktop:w-[10%]
+    desktop:h-[100%]
+    desktop:flex
+    desktop:flex-row
+    desktop:flex-wrap
+    desktop:justify-end
+    desktop:px-[10px]
+    desktop:items-center
+    desktop:font-[sanss]
+    desktop:text-[16px]
+    desktop:text-[#2b2b2b]
+    desktop:gap-x-[5px]
+    mobile:hidden;
+  }
+
+  .menu__seller__nav > div {
     @apply desktop:h-[100%]
       desktop:w-fit
       desktop:relative
@@ -180,7 +251,7 @@
       desktop:duration-200;
   }
 
-  .bottom > .menu > nav > div > .animate {
+  .menu__seller__nav > div > .animate {
     @apply desktop:w-[0px]
              desktop:absolute
               desktop:left-0
@@ -189,13 +260,14 @@
               desktop:bg-bgColor
               desktop:transition-all
               desktop:duration-300
-              desktop:z-[2];
+              desktop:z-[2]
+              dark:bg-[#2b2b2b];
   }
-  .bottom > .menu > nav > div:hover > .animate {
+  .menu__seller__nav > div:hover > .animate {
     @apply desktop:w-[100%];
   }
 
-  .bottom > .menu > nav > div > a {
+  .menu__seller__nav > div > a {
     @apply desktop:flex
     desktop:flex-row
     desktop:flex-wrap
@@ -207,173 +279,247 @@
       desktop:font-[sanss]
       desktop:text-[14px]
       desktop:items-center
-      desktop:gap-[3px];
+      desktop:gap-[3px]
+      desktop:transition-all
+      desktop:duration-300;
   }
-  .bottom > .menu > nav > div > a > span {
-    @apply desktop:flex
-      desktop:items-center;
-  }
-
-  .menu__item__1 > .kala {
-    @apply desktop:font-extrabold;
-  }
-  .menu__item__1 > .kala {
-    color: black !important;
-    opacity: 1 !important ;
-    font-size: 14px !important ;
+  .menu__seller__nav > div > a:hover {
+    @apply desktop:opacity-[1];
   }
 
-  .line__1 {
-    @apply desktop:inline-block
-          desktop:w-[1px]
-          desktop:h-[16px]
-          desktop:bg-[lightgray];
+  .top__mobile {
+    @apply desktop:hidden
+    mobile:w-[100%]
+    mobile:h-[150px]
+    mobile:bg-[#282828] 
+    mobile:flex
+    mobile:flex-col
+    mobile:flex-nowrap
+    mobile:justify-between
+    mobile:pt-[8px]
+    mobile:pb-[18px];
   }
 
-  .buyer__h2 {
-    @apply desktop:w-[60%]
-    desktop:h-fit
+  .top__mobile > .img__mobile {
+    @apply mobile:w-[170px]
+  mobile:h-[70px]
+  mobile:self-center
+  mobile:mx-[30px]
+  mobile:bg-bgColor
+  mobile:mt-[10px]
+  dark:grayscale
+  desktop:hidden;
+  }
+
+  .top__mobile > #hamberger {
+    @apply desktop:hidden
+    mobile:hidden
+    mobile:self-start
+    mobile:mr-[25px];
+  }
+  .top__mobile > #close__menu {
+    @apply desktop:hidden
+    mobile:absolute
+    mobile:right-[27px]
+    mobile:top-[140px]
+    mobile:hidden;
+  }
+  .menu__mobile > label[for="close__menu"] {
+    @apply desktop:hidden
+    mobile:absolute
+    mobile:w-[20px]
+    mobile:h-[20px]
+    mobile:bg-[red]
+    dark:bg-[whitesmoke]
+    dark:text-[black]
+    mobile:left-[27px]
+    mobile:top-0
+    mobile:text-center
+    mobile:leading-[20px]
+    mobile:text-[20px]
+    mobile:text-[white]
+    mobile:rounded-[5px]
+    mobile:cursor-pointer;
+  }
+  .top__mobile > #hamberger:checked ~ .menu__mobile {
+    @apply mobile:right-0
+    mobile:top-[150px]
+    mobile:transition-all
+    mobile:duration-1000;
+  }
+
+  .top__mobile > #close__menu:checked ~ .menu__mobile {
+    @apply mobile:right-0
+    mobile:top-[-400%]
+    mobile:transition-all
+    mobile:duration-1000;
+  }
+  .top__mobile
+    > #hamberger:checked
+    ~ label[for="hamberger"]
+    > .hamberger__items {
+    @apply mobile:rounded-none
+    mobile:h-[5px];
+  }
+  .top__mobile > #hamberger:checked ~ label[for="hamberger"] {
+    @apply mobile:h-[25px]
+    mobile:w-[28px];
+  }
+
+  .top__mobile > label[for="hamberger"] {
+    @apply desktop:hidden
+    mobile:self-start
+    mobile:h-[20px]
+    mobile:w-[30px]
+    mobile:flex
+    mobile:flex-col
+    mobile:flex-wrap
+    mobile:justify-between
+    mobile:absolute
+    mobile:right-[27px]
+    mobile:top-[110px]
+    mobile:cursor-pointer
+    mobile:transition-all
+    mobile:duration-1000;
+  }
+  .top__mobile > label[for="hamberger"] > .hamberger__items {
+    @apply mobile:w-[100%]
+    mobile:h-[4px]
+    mobile:bg-[lightgrey]
+    mobile:brightness-[85%]
+    mobile:rounded-[8px]
+    mobile:transition-all
+    mobile:duration-1000;
+  }
+  .top__mobile > label[for="hamberger"]:hover > .hamberger__items {
+    @apply mobile:bg-[white]
+    mobile:brightness-[100%];
+  }
+
+  .menu__mobile {
+    @apply desktop:hidden
+    mobile:w-[100%]
+    mobile:h-fit
+    mobile:pb-[30px]
+    mobile:bg-[#282828] 
+    mobile:absolute
+    mobile:right-0
+    mobile:top-[-1000%]
+    mobile:z-[-2000]
+    mobile:flex
+    mobile:flex-row
+    mobile:flex-wrap
+    mobile:gap-y-[5px]
+    mobile:transition-all
+    mobile:duration-1000
+    mobile:pt-[8px];
+  }
+
+  .menu__mobile > nav {
+    @apply mobile:w-[100%]
+   
+   mobile:flex
+   mobile:flex-col
+   mobile:flex-nowrap
+   mobile:items-start
+   mobile:gap-y-[16px]
+   mobile:pr-[31px];
+  }
+  .menu__mobile > nav > .items {
+    @apply mobile:w-[100%]
+            mobile:h-fit;
+  }
+  .menu__mobile > nav > .items > a {
+    @apply mobile:w-fit
+      mobile:h-auto
+      mobile:no-underline
+      mobile:font-[sanss]
+      mobile:text-[14px]
+      mobile:text-[whitesmoke]
+      mobile:opacity-[0.7];
+  }
+
+  .menu__mobile > nav > .items:hover > a {
+    @apply mobile:opacity-[1];
+  }
+}
+
+.main__seller__panel__center {
+  @apply desktop:w-[80%]
+    desktop:h-[1000px]
+    desktop:bg-[white]
+    desktop:my-[50px]
     desktop:mx-auto
-    desktop:mt-[100px]
-    desktop:mb-[10px]
-    desktop:font-[sanss]
-    desktop:text-[20px]
-    desktop:font-extrabold
-    desktop:text-bgColor;
-  }
-
-  .buyer__form {
-    @apply desktop:w-[60%]
-    desktop:h-fit
-    desktop:mx-auto
-    desktop:mb-[100px]
+    desktop:rounded-[16px]
+    desktop:shadow-md
+    desktop:py-[26px]
+    desktop:px-[40px]
     desktop:flex
     desktop:flex-row
     desktop:flex-wrap
-    desktop:border-[2px]
-    desktop:border-[solid]
-    desktop:border-bgColor
-    desktop:rounded-[16px];
-  }
-  .buyer__form {
-    box-shadow: 5px 5px 9px #25012b;
-  }
-  .form__main {
-    @apply desktop:w-[60%]
-    desktop:h-fit
+   mobile:w-[80%]
+   mobile:h-[1000px]
+   mobile:bg-[white]
+   mobile:my-[50px]
+   mobile:mx-auto
+   mobile:rounded-[16px]
+   mobile:shadow-md
+   mobile:py-[26px]
+   mobile:px-[40px]
+   mobile:flex
+   mobile:flex-row
+   mobile:flex-wrap;
+}
+
+footer {
+  @apply desktop:w-[100%]
+    desktop:h-[100px]
+    desktop:bg-bgColor
+  desktop:mt-[20px]
+ mobile:w-[100%]
+   mobile:h-[100px]
+   mobile:bg-bgColor
+ mobile:mt-[20px]
+ dark:bg-[grey];
+}
+
+.btn {
+  position: fixed;
+}
+.btn {
+  @apply desktop:w-[40px]
+    desktop:h-[40px]
+    desktop:rounded-[2px]
+    desktop:z-[1000]
+    desktop:bottom-[20px]
+    desktop:left-[30px]
+    desktop:bg-[#00000066]
     desktop:flex
-    desktop:flex-col
-    desktop:flex-wrap
-    desktop:py-[10px]
-    desktop:px-[30px]
-    desktop:relative;
-  }
-  .buyer__form__img {
-    @apply desktop:w-[40%]
-    desktop:h-auto
-    desktop:bg-bgColor
-    desktop:bg-opacity-[0.6]
-    desktop:rounded-l-[16px];
-  }
-  .form__main > label {
-    @apply desktop:font-[sanss]
-    desktop:font-bold
-    desktop:text-[16px]
-    desktop:mb-[10px]
-    desktop:mt-[20px];
-  }
-  .form__main > h2 {
-    @apply desktop:font-[sanss]
-    desktop:font-bold
-    desktop:text-[16px]
-    desktop:mb-[30px]
-    desktop:mt-[20px];
-  }
-
-  .form__main > input {
-    @apply desktop:w-[200px]
-    desktop:h-[30px]
-    desktop:mx-[30px]
-    desktop:outline-none
-    desktop:px-[10px]
-    desktop:bg-bgColor
-    desktop:bg-opacity-[0.6]
-    desktop:font-[sanss]
-    desktop:font-bold
-    desktop:text-[whitesmoke]
-    desktop:text-[14px]
-    desktop:rounded-[8px];
-  }
-  .form__main > label[for="man"],
-  .form__main > label[for="woman"] {
-    @apply desktop:m-[0px]
-    desktop:font-[sanss]
-    desktop:inline-block
-    desktop:w-fit;
-  }
-
-  .form__main > .radio__1 {
-    @apply desktop:w-[25px]
-    desktop:h-[15px]
-    desktop:inline-block
-    desktop:mt-[6px]
-    desktop:absolute
-    desktop:bottom-[345px];
-  }
-  .form__main > .radio__2 {
-    @apply desktop:w-[25px]
-    desktop:h-[15px]
-    desktop:inline-block
-    desktop:mt-[6px]
-    desktop:absolute
-    desktop:bottom-[325px];
-  }
-  .form__main > input[type="submit"] {
-    @apply desktop:w-[50px]
-    desktop:mt-[30px]
-    desktop:mx-[180px]
-    desktop:bg-[white]
-    desktop:text-[black]
-    desktop:cursor-pointer
-    desktop:border-[1px]
-    desktop:border-[solid]
-    desktop:border-bgColor
+    desktop:flex-row
+    desktop:justify-center
+    desktop:items-center
     desktop:transition-all
-    desktop:duration-300;
-  }
-  .form__main > input[type="submit"]:hover {
-    @apply desktop:bg-bgColor
-    desktop:text-[whitesmoke]
-    desktop:bg-opacity-[0.8];
-  }
-  .fixed {
-    position: fixed;
-  }
+    desktop:duration-300
+    mobile:w-[40px]
+    mobile:h-[40px]
+    mobile:rounded-[2px]
+    mobile:z-[1000]
+    mobile:bottom-[20px]
+    mobile:left-[10px]
+    mobile:bg-[#00000066]
+    mobile:flex
+    mobile:flex-row
+    mobile:justify-center
+    mobile:items-center
+    mobile:transition-all
+    mobile:duration-300;
+}
 
-  .fixed {
-    @apply desktop:w-[40px]
-      desktop:h-[40px]
-      desktop:rounded-[2px]
-      desktop:z-[1000]
-      desktop:bottom-[20px]
-      desktop:left-[20px];
-  }
-
-  .fixed > a {
-    @apply desktop:w-[100%]
-        desktop:h-[100%]
-        desktop:bg-[#000000]
-        desktop:opacity-[0.4]
-        desktop:rounded-[2px]
-        desktop:flex
-        desktop:items-center
-        desktop:justify-center
-        desktop:transition-all
-        desktop:duration-300;
-  }
-
-  .fixed > a:hover {
-    @apply desktop:bg-[black]
-          desktop:opacity-[1];
-  }
+.btn:hover {
+  @apply desktop:bg-[#000000]
+  mobile:bg-[#000000];
+}
+.svg__moon {
+  @apply desktop:hidden
+  mobile:hidden;
 }

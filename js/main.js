@@ -1,20 +1,16 @@
-let x = document.querySelector(".register");
-console.log(x);
-x.addEventListener("click", function () {
-  let name = prompt("فروشنده یا خریدار ؟");
-  alert(name);
-  switch (name) {
-    case "فروشنده": {
-      window.location.href = "./Seller-Page.html";
-      break;
-    }
-    case "خریدار": {
-      window.location.href = "./buyer.html";
-      break;
-    }
-    default: {
-      alert("لطفا فروشنده یا خریدار را انتخاب کنید");
-      break;
-    }
+const sunIcon = document.querySelector(".svg__sun");
+const moonIcon = document.querySelector(".svg__moon");
+let btn = document.querySelector(".btn");
+
+btn.addEventListener("click", () => {
+  document.children[0].classList.toggle("dark");
+
+  // Check if the dark class is present
+  if (document.children[0].classList.contains("dark")) {
+    moonIcon.style.display = "block";
+    sunIcon.style.display = "none";
+  } else {
+    sunIcon.style.display = "block";
+    moonIcon.style.display = "none";
   }
 });
